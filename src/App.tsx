@@ -1,8 +1,8 @@
-// eslint-disable-next-line no-use-before-define
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
   return (
     <div className="App">

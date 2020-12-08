@@ -5,10 +5,19 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'standard',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    'plugin:@typescript-eslint/recommended'
+    // 'prettier/@typescript-eslint',
+    // 'plugin:prettier/recommended',
   ],
+  rules: {
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
+    // '@typescript-eslint/explicit-module-boundary-types': 'off',
+    // 'explicit-module-boundary-types': 'off',
+
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -17,6 +26,5 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint'],
-  rules: {}
+  plugins: ['react', '@typescript-eslint']
 };
