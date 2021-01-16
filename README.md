@@ -18,6 +18,3 @@ those commands are available on your development .
 
 ### who can available this example ?
 - This example is basically for windows user and who wants to use eslint and prettier .
-
-but mac user can probably use 
-change to `"lint": "eslint --quiet --fix 'src/**/*.{js,ts,tsx,json}*'"`,as same as prettier:check.
