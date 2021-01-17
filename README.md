@@ -14,7 +14,7 @@ In the project directory, you can run:
 
 ### `npm run start ` 
 
-those commands are available on your development .
+those commands are available in this repository.
 
-### who can available this example ?
+### who can use this example ?
 - This example is basically for windows user and who wants to use eslint and prettier .
