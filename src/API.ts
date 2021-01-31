@@ -9,6 +9,7 @@ export type Question = {
   type: string;
 };
 
+
 export enum Difficulty {
   EASY = "easy",
   MEDIUM = "medium",
