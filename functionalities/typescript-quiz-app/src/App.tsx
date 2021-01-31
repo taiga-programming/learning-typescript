@@ -33,6 +33,7 @@ const App: React.FC = () => {
     );
     setQuestions(newQuestions);
     setScore(0);
+    //initiate 
     setUserAnswers([]);
     setNumber(0);
     setLoading(false);
@@ -53,6 +54,7 @@ const App: React.FC = () => {
         correct,
         correctAnswer: questions[number].correct_answer,
       };
+      //save object 
       setUserAnswers((prev) => [...prev, answerObject]);
     }
   };
@@ -78,18 +80,27 @@ const App: React.FC = () => {
             Start
           </button>
         ) : null}
+        {/* if not gameover , */ }
+
         {!gameOver ? <p className='score'>Score: {score}</p> : null}
         {loading ? <p>Loading Questions...</p> : null}
         {!loading && !gameOver && (
           <QuestionCard
+            //this is question 1/10 , "1"
             questionNr={number + 1}
+            //this is 10 
             totalQuestions={TOTAL_QUESTIONS}
+            // this is connect with QuestionsState(API.ts)
             question={questions[number].question}
+            // correct answer(this is check answer fucntion value )
             answers={questions[number].answers}
+            //confirm user Answer 
             userAnswer={userAnswers ? userAnswers[number] : undefined}
+            //this is checkSnswer async function
             callback={checkAnswer}
           />
         )}
+           {/* // if not */} 
         {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
           <button className='next' onClick={nextQuestion}>
             Next Question
