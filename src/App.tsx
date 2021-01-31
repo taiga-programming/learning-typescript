@@ -80,6 +80,7 @@ const App: React.FC = () => {
             Start
           </button>
         ) : null}
+        
         {/* if not gameover , */ }
 
         {!gameOver ? <p className='score'>Score: {score}</p> : null}
