@@ -5,11 +5,9 @@ class SimpleCounter {
     for (let i = 1; i <= 7; i++) {
       document.write(i.toString + '<br>');
     }
-
-    console.log('all done!')
+    console.log('all done!');
   }
 }
 
-let cout = new SimpleCounter();
-
+let count = new SimpleCounter();
 console.count();

@@ -10,6 +10,6 @@ var SimpleCounter = /** @class */ (function () {
     };
     return SimpleCounter;
 }());
-var cout = new SimpleCounter();
+var count = new SimpleCounter();
 console.count();
 //# sourceMappingURL=test.js.map
