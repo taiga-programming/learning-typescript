@@ -1,0 +1,1 @@
+This learning typescript repo is what I learned on the website also YouTube.
